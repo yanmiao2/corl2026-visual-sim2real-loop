@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closing the Visual Sim-to-Real Loop for Robot Learning | Visual Sim-to-Real Loop</title>
+    <meta name="description" content="A proposed half-day CoRL 2026 workshop on editable worlds, in-the-loop evaluation, and deployment evidence for visual sim-to-real robot learning." />
+    <meta name="theme-color" content="#152331" />
+    <meta property="og:title" content="Closing the Visual Sim-to-Real Loop for Robot Learning" />
+    <meta property="og:description" content="A proposed half-day CoRL 2026 workshop on editable worlds, in-the-loop evaluation, and deployment evidence for visual sim-to-real robot learning." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yanmiao2.github.io/corl2026-visual-sim2real-loop/" />
+    <meta property="og:image" content="./static/assets/visual-sim2real-hero.png" />
+    <link rel="stylesheet" href="./static/styles.css" />
+  </head>
+  <body>
+    
+  <header class="site-navbar">
+    <div class="container navbar-row">
+      <a class="navbar-brand" href="#top">
+        <span class="brand-mark">VSR</span>
+        <span>Visual Sim-to-Real Loop</span>
+      </a>
+      <nav class="navbar-links" aria-label="Primary">
+        
+          <a href="#overview">Overview</a>
+        
+          <a href="#challenges">Challenges</a>
+        
+          <a href="#speakers">Speakers</a>
+        
+          <a href="#submissions">Submissions</a>
+        
+          <a href="#schedule">Schedule</a>
+        
+          <a href="#organizers">Organizers</a>
+        
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-block" style="background-image: url('./static/assets/visual-sim2real-hero.png')">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="status-badge">Confirmed invited speaker slate</p>
+        <p class="eyebrow">Proposed half-day CoRL 2026 workshop, November 9, 2026, JW Marriott Austin</p>
+        <h1 class="hero-title">Closing the Visual Sim-to-Real Loop for Robot Learning</h1>
+        <p class="hero-subtitle">Aerial Autonomy as a Fast, Safety-Critical Testbed</p>
+        <p class="hero-description">A challenge-driven half-day workshop on turning real scenes into editable worlds, using those worlds to stress-test visual policies, and reporting evidence that predicts safe deployment.</p>
+        <div class="hero-actions">
+          
+            <a class="button-link button-primary" href="#submissions">Call for Contributions</a>
+          
+            <a class="button-link button-secondary" href="#speakers">Confirmed Speakers</a>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="fact-strip" aria-label="Workshop facts">
+      <div class="container stat-row">
+        
+          <article class="stat-card">
+            <span class="stat-label">Format</span>
+            <strong>Half-day, in person</strong>
+          </article>
+        
+          <article class="stat-card">
+            <span class="stat-label">Invited speakers</span>
+            <strong>4 confirmed</strong>
+          </article>
+        
+          <article class="stat-card">
+            <span class="stat-label">Contributions</span>
+            <strong>Workshop papers accepted</strong>
+          </article>
+        
+          <article class="stat-card">
+            <span class="stat-label">Artifact</span>
+            <strong>Community checklist</strong>
+          </article>
+        
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-kicker">Overview</p>
+          <h2 class="section-title">Workshop Scope</h2>
+        </div>
+        <div class="prose-block">
+          
+            <p>Vision-conditioned robot policies are increasingly trained in simulation, neural scenes, reconstructed digital twins, or generated worlds before deployment on real hardware. The open question is no longer only whether a simulation looks realistic; it is whether evidence from simulation, hardware-in-the-loop, mixed reality, and real trials predicts closed-loop behavior.</p>
+          
+            <p>Aerial robots make this gap impossible to ignore. Fast flight compresses perception, control, and safety failures into seconds, while crashes make exhaustive real-world stress testing costly and hard to reproduce.</p>
+          
+            <p>The workshop uses aerial autonomy as a demanding testbed for a broader robot learning challenge: how should we reconstruct, edit, perturb, evaluate, log, and release visual sim-to-real evidence so claims are comparable across labs?</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="technical-context">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-kicker">From photorealistic simulators to editable neural-scene testbeds</p>
+          <h2 class="section-title">Technical Context</h2>
+        </div>
+        <div class="prose-block">
+          
+            <p>AirSim, FlightGoggles, Flightmare, and related simulators established visually rich aerial and autonomous-vehicle simulation. Domain randomization and adaptation then showed that transfer depends on more than appearance: camera pose, illumination, motion blur, sensor artifacts, latency, actuator dynamics, system identification, and scenario distributions can all change the policy&#39;s closed-loop behavior.</p>
+          
+            <p>Newer NeRF and 3D Gaussian Splatting systems are shifting the field from generic simulation to real-to-sim-to-real pipelines. Recent work such as NeRF2Real, COV-NeRF, SplatSim, RoboGSim, VR-Robo, RE3SIM, SOUS VIDE, Splat-Nav, GRaD-Nav++, HAMMER, and VISTA points toward reconstructed, composable, semantic, or language-queryable worlds for policy training and evaluation.</p>
+          
+            <p>The missing piece is community agreement on the loop: which world edits matter, which sim/real correlations should be reported, how to combine simulation with hardware-in-the-loop and mixed reality, and what negative results are necessary before deployment.</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="challenges">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <p class="section-kicker">Challenge focus</p>
+            <h2 class="section-title">Research Questions</h2>
+          </div>
+          <p class="section-note">Designed around specific open problems rather than survey talks.</p>
+        </div>
+        <div class="challenge-grid">
+          
+            <article class="challenge-card">
+              <span class="card-index">01</span>
+              <h3>Editable Worlds That Matter</h3>
+              <p>Reconstructed, generated, or hand-built environments should expose policy-relevant failures rather than only cosmetic visual variation.</p>
+            </article>
+          
+            <article class="challenge-card">
+              <span class="card-index">02</span>
+              <h3>Fidelity Versus Usefulness</h3>
+              <p>The workshop will ask which visual, dynamics, sensing, latency, and control mismatches actually change closed-loop behavior.</p>
+            </article>
+          
+            <article class="challenge-card">
+              <span class="card-index">03</span>
+              <h3>In-the-Loop Evaluation</h3>
+              <p>Simulation, hardware-in-the-loop, mixed reality, and real deployment should form a staged evidence pipeline.</p>
+            </article>
+          
+            <article class="challenge-card">
+              <span class="card-index">04</span>
+              <h3>Failure-Boundary Discovery</h3>
+              <p>Policies need safe stress tests that find brittle initial conditions, perturbations, and scenario parameters before hardware damage occurs.</p>
+            </article>
+          
+            <article class="challenge-card">
+              <span class="card-index">05</span>
+              <h3>Reproducible Evidence</h3>
+              <p>Logs, perturbation suites, negative results, and artifacts should make visual sim-to-real claims inspectable.</p>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="topics">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <p class="section-kicker">Scope</p>
+            <h2 class="section-title">Topics of Interest</h2>
+          </div>
+        </div>
+        <div class="topic-grid">
+          
+            <article class="topic-card">Real-to-sim reconstruction, editable digital twins, and generative worlds</article>
+          
+            <article class="topic-card">NeRF, 3D Gaussian Splatting, neural rendering, and semantic scene maps</article>
+          
+            <article class="topic-card">Visual sim-to-real transfer for quadrotors, fixed-wing UAVs, and agile robots</article>
+          
+            <article class="topic-card">Hardware-in-the-loop, mixed-reality, and staged policy evaluation</article>
+          
+            <article class="topic-card">Failure-boundary discovery, safe stress testing, and deployment readiness</article>
+          
+            <article class="topic-card">Vision-based navigation, tracking, landing, racing, and aerial interaction</article>
+          
+            <article class="topic-card">Synthetic perception data, auto-labeling, and task distribution design</article>
+          
+            <article class="topic-card">Latency, sensing artifacts, dynamics mismatch, and closed-loop behavior</article>
+          
+            <article class="topic-card">Multi-robot aerial systems, swarms, drone racing, and coordinated autonomy</article>
+          
+            <article class="topic-card">Artifacts, logs, perturbation suites, and reporting standards</article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="speakers">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <p class="section-kicker">Invited program</p>
+            <h2 class="section-title">Confirmed Speakers</h2>
+          </div>
+          <p class="section-note">Four invited speakers, aligned with the CoRL half-day workshop limit.</p>
+        </div>
+        <div class="speaker-grid">
+          
+            <article class="speaker-card">
+              <a class="speaker-photo" href="https://rpg.ifi.uzh.ch/people_scaramuzza.html" aria-label="Davide Scaramuzza profile">
+                <img src="https://rpg.ifi.uzh.ch/img/people/davide.jpg" alt="Davide Scaramuzza" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+                <span class="avatar-fallback">DS</span>
+              </a>
+              <div class="speaker-copy">
+                <p class="speaker-status">Confirmed invited speaker</p>
+                <h3>Davide Scaramuzza</h3>
+                <p class="speaker-meta">University of Zurich</p>
+                <p>Agile visual navigation, onboard perception and computation, event cameras, drone racing, and high-speed autonomous flight.</p>
+                
+              </div>
+            </article>
+          
+            <article class="speaker-card">
+              <a class="speaker-photo" href="https://www2.eecs.berkeley.edu/Faculty/Homepages/loiannog.html" aria-label="Giuseppe Loianno profile">
+                <img src="https://www2.eecs.berkeley.edu/Faculty/Photos/Homepages/loiannog.jpg" alt="Giuseppe Loianno" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+                <span class="avatar-fallback">GL</span>
+              </a>
+              <div class="speaker-copy">
+                <p class="speaker-status">Confirmed invited speaker</p>
+                <h3>Giuseppe Loianno</h3>
+                <p class="speaker-meta">UC Berkeley / CITRIS</p>
+                <p>Agile aerial robotics, onboard sensing, learning-enabled perception, control, and multi-robot collaboration.</p>
+                
+              </div>
+            </article>
+          
+            <article class="speaker-card">
+              <a class="speaker-photo" href="https://profiles.stanford.edu/mac-schwager" aria-label="Mac Schwager profile">
+                <img src="https://profiles.stanford.edu/proxy/api/cap/profiles/70847/resources/profilephoto/350x350.1509546217908.jpg" alt="Mac Schwager" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+                <span class="avatar-fallback">MS</span>
+              </a>
+              <div class="speaker-copy">
+                <p class="speaker-status">Confirmed; travel dependent</p>
+                <h3>Mac Schwager</h3>
+                <p class="speaker-meta">Stanford University</p>
+                <p>Multi-robot systems, aerial swarms, real-world coordination, drone autonomy, and Gaussian-splatting navigation.</p>
+                
+                  <p class="speaker-note">If unavoidable travel prevents attendance, Prof. Schwager will coordinate a senior Ph.D. representative from the Multi-Robot Systems Lab.</p>
+                
+              </div>
+            </article>
+          
+            <article class="speaker-card">
+              <a class="speaker-photo" href="https://stanfordasl.github.io/people/prof-marco-pavone/" aria-label="Marco Pavone profile">
+                <img src="https://stanfordasl.github.io/img/people/Pavone.jpg" alt="Marco Pavone" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+                <span class="avatar-fallback">MP</span>
+              </a>
+              <div class="speaker-copy">
+                <p class="speaker-status">Confirmed invited speaker</p>
+                <h3>Marco Pavone</h3>
+                <p class="speaker-meta">Stanford University / NVIDIA</p>
+                <p>Safety, aerospace autonomy, planning and control under uncertainty, and deployment-grounded autonomous systems.</p>
+                
+              </div>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="format">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <p class="section-kicker">Active participation</p>
+            <h2 class="section-title">Workshop Format</h2>
+          </div>
+          <p class="section-note">Every block is designed to produce discussion input for the final artifact.</p>
+        </div>
+        <div class="format-grid">
+          
+            <article class="format-card">
+              <h3>Evidence Map</h3>
+              <p>Organizers open with a shared map from real data to editable worlds, policy learning, in-loop evaluation, and deployment.</p>
+            </article>
+          
+            <article class="format-card">
+              <h3>Challenge Talks</h3>
+              <p>Each invited talk is short and ends with one open challenge and one proposed evaluation artifact.</p>
+            </article>
+          
+            <article class="format-card">
+              <h3>Contributed Spotlights</h3>
+              <p>Accepted papers, datasets, systems, failures, and position pieces will be presented as posters, with selected short talks.</p>
+            </article>
+          
+            <article class="format-card">
+              <h3>Artifact Sprint</h3>
+              <p>Breakout groups draft checklist items for scenario generation, sim/real alignment, in-loop evaluation, and deployment reporting.</p>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="submissions">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-kicker">Contributed papers</p>
+          <h2 class="section-title">Call for Contributions</h2>
+          <p class="section-note">We will solicit and accept contributed workshop papers.</p>
+        </div>
+        <div class="prose-block">
+          <p>We plan to solicit 2 to 4 page extended abstracts, in-progress research papers, datasets, benchmark proposals, system descriptions, failure analyses, sim/real correlation studies, and position pieces. Submissions from aerial and non-aerial visual robotics are welcome if they address the visual sim-to-real loop.</p>
+          <ul class="bullet-list">
+            
+              <li>Each submission will receive at least two reviews.</li>
+            
+              <li>Review criteria: relevance, clarity, technical soundness, discussion value, and artifact potential.</li>
+            
+              <li>Accepted contributions will be invited for posters, selected spotlights, and inclusion in the post-workshop artifact.</li>
+            
+              <li>Main CoRL 2026 papers will not be accepted as workshop papers, but related work may support discussion of an open challenge.</li>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="schedule">
+      <div class="container section-grid">
+        <div class="section-heading">
+          <p class="section-kicker">Draft half-day plan</p>
+          <h2 class="section-title">Schedule</h2>
+          <p class="section-note">Final times will be updated after CoRL workshop decisions and room assignments.</p>
+        </div>
+        <div class="timeline">
+          
+            <article class="timeline-item">
+              <div class="timeline-time">09:00</div>
+              <div class="timeline-copy">
+                <h3>Opening evidence map</h3>
+                <p>Real scenes, editable worlds, in-loop evaluation, and deployment evidence</p>
+              </div>
+            </article>
+          
+            <article class="timeline-item">
+              <div class="timeline-time">09:15</div>
+              <div class="timeline-copy">
+                <h3>Invited challenge talks I</h3>
+                <p>Agile visual flight and aerial systems integration</p>
+              </div>
+            </article>
+          
+            <article class="timeline-item">
+              <div class="timeline-time">10:05</div>
+              <div class="timeline-copy">
+                <h3>Contributed spotlights</h3>
+                <p>Selected abstracts, datasets, systems, and failure analyses</p>
+              </div>
+            </article>
+          
+            <article class="timeline-item">
+              <div class="timeline-time">10:30</div>
+              <div class="timeline-copy">
+                <h3>Coffee and posters</h3>
+                <p>Poster discussion, informal networking, and artifact-note collection</p>
+              </div>
+            </article>
+          
+            <article class="timeline-item">
+              <div class="timeline-time">11:00</div>
+              <div class="timeline-copy">
+                <h3>Invited challenge talks II</h3>
+                <p>Multi-robot deployment, safety, and control</p>
+              </div>
+            </article>
+          
+            <article class="timeline-item">
+              <div class="timeline-time">11:50</div>
+              <div class="timeline-copy">
+                <h3>Breakout artifact sprint</h3>
+                <p>Scenario generation, sim/real alignment, evaluation, and reporting</p>
+              </div>
+            </article>
+          
+            <article class="timeline-item">
+              <div class="timeline-time">12:35</div>
+              <div class="timeline-copy">
+                <h3>Fishbowl synthesis</h3>
+                <p>Community checklist takeaways and unresolved disagreements</p>
+              </div>
+            </article>
+          
+            <article class="timeline-item">
+              <div class="timeline-time">13:00</div>
+              <div class="timeline-copy">
+                <h3>Adjourn</h3>
+                <p>End of half-day workshop</p>
+              </div>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="artifact">
+      <div class="container artifact-band">
+        <div>
+          <p class="section-kicker">Post-workshop artifact</p>
+          <h2 class="section-title">Post-Workshop Artifact</h2>
+        </div>
+        <p>The workshop will produce a public community report titled A Community Checklist for Closing the Visual Sim-to-Real Loop. It will summarize evaluation axes, perturbation suites, sim/real correlation practices, minimum logs, failure-reporting norms, and links to accepted contributions.</p>
+      </div>
+    </section>
+
+    <section class="section muted-section" id="organizers">
+      <div class="container">
+        <div class="section-header-row">
+          <div>
+            <p class="section-kicker">Organizing team</p>
+            <h2 class="section-title">Organizers</h2>
+          </div>
+        </div>
+        <div class="organizer-grid">
+          
+            <article class="organizer-card">
+              <h3><a href="mailto:yanmiao2@illinois.edu">Yan Miao</a></h3>
+              <p class="speaker-meta">University of Illinois Urbana-Champaign</p>
+              <p>Researcher on photorealistic simulation, visual aerial autonomy, mixed-reality evaluation, and zero-shot sim-to-real transfer.</p>
+            </article>
+          
+            <article class="organizer-card">
+              <h3><a href="mailto:mitras@illinois.edu">Sayan Mitra</a></h3>
+              <p class="speaker-meta">University of Illinois Urbana-Champaign</p>
+              <p>Researcher in autonomy, verification, control, and safe cyber-physical systems for robotics and aerial systems.</p>
+            </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-heading centered-heading">
+          <p class="section-kicker">Status</p>
+          <h2 class="section-title">FAQ</h2>
+        </div>
+        <div class="faq-list">
+          
+            <details class="faq-item" open>
+              <summary>Is the workshop accepted?</summary>
+              <p>No. This site currently supports the CoRL 2026 workshop proposal.</p>
+            </details>
+          
+            <details class="faq-item" >
+              <summary>Are invited speakers confirmed?</summary>
+              <p>Yes. Davide Scaramuzza, Giuseppe Loianno, Marco Pavone, and Mac Schwager have accepted the invitation. Mac Schwager noted a possible travel conflict and may coordinate a senior Ph.D. representative if needed.</p>
+            </details>
+          
+            <details class="faq-item" >
+              <summary>Will contributed papers be accepted?</summary>
+              <p>Yes. The workshop will solicit contributed workshop papers, posters, and selected spotlights, with a review process focused on relevance, technical soundness, and discussion value.</p>
+            </details>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-title">Closing the Visual Sim-to-Real Loop for Robot Learning</p>
+        <p>Proposed CoRL 2026 workshop on editable worlds, in-the-loop evaluation, and deployment evidence for visual sim-to-real robot learning.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://yanmiao2.github.io/corl2026-visual-sim2real-loop/">https://yanmiao2.github.io/corl2026-visual-sim2real-loop/</a>
+        <a href="mailto:yanmiao2@illinois.edu">yanmiao2@illinois.edu</a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="./static/script.js"></script>
+  </body>
+</html>
