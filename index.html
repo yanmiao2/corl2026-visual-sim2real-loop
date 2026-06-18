@@ -3,38 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Closing the Visual Sim-to-Real Loop for Robot Learning | Visual Sim-to-Real Loop</title>
-    <meta name="description" content="A proposed CoRL 2026 half-day workshop on editable visual worlds, closed-loop sim-to-real evidence, and safe deployment for robot learning." />
+    <title>Closing the Visual Sim-to-Real Loop for Agile Aerial Robots | Agile Aerial Sim-to-Real</title>
+    <meta name="description" content="A proposed CoRL 2026 half-day workshop on predictive visual sim-to-real evidence for agile aerial robots." />
     <meta name="theme-color" content="#152331" />
-    <meta property="og:title" content="Closing the Visual Sim-to-Real Loop for Robot Learning" />
-    <meta property="og:description" content="A proposed CoRL 2026 half-day workshop on editable visual worlds, closed-loop sim-to-real evidence, and safe deployment for robot learning." />
+    <meta property="og:title" content="Closing the Visual Sim-to-Real Loop for Agile Aerial Robots" />
+    <meta property="og:description" content="A proposed CoRL 2026 half-day workshop on predictive visual sim-to-real evidence for agile aerial robots." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yanmiao2.github.io/corl2026-visual-sim2real-loop/" />
     <meta property="og:image" content="./static/assets/visual-sim2real-hero.png" />
     <link rel="stylesheet" href="./static/styles.css" />
   </head>
   <body>
-    
+
   <header class="site-navbar">
     <div class="container navbar-row">
       <a class="navbar-brand" href="#top">
         <span class="brand-mark">VSR</span>
-        <span>Visual Sim-to-Real Loop</span>
+        <span>Agile Aerial Sim-to-Real</span>
       </a>
       <nav class="navbar-links" aria-label="Primary">
-        
+
           <a href="#overview">Overview</a>
-        
+
           <a href="#challenges">Challenges</a>
-        
+
           <a href="#speakers">Speakers</a>
-        
+
           <a href="#format">Format</a>
-        
+
           <a href="#submissions">Papers</a>
-        
+
           <a href="#organizers">Organizers</a>
-        
+
       </nav>
       <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
         <span></span>
@@ -47,44 +47,44 @@
     <section class="hero-block" style="background-image: url('./static/assets/visual-sim2real-hero.png')">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="status-badge">Confirmed speaker slate + contributed papers</p>
+        <p class="status-badge">4 committed speakers + contributed papers</p>
         <p class="eyebrow">Proposed half-day CoRL 2026 workshop, November 9, 2026, JW Marriott Austin</p>
-        <h1 class="hero-title">Closing the Visual Sim-to-Real Loop for Robot Learning</h1>
-        <p class="hero-subtitle">Aerial Autonomy as a Fast, Safety-Critical Testbed</p>
-        <p class="hero-description">A focused half-day workshop on editable real-to-sim worlds, closed-loop policy stress tests, and deployment evidence that transfers from simulation to real robots.</p>
+        <h1 class="hero-title">Closing the Visual Sim-to-Real Loop for Agile Aerial Robots</h1>
+        <p class="hero-subtitle">Editable Worlds, Millisecond-Scale Decisions, and Predictive Deployment Evidence</p>
+        <p class="hero-description">A focused half-day workshop asking what simulation evidence predicts real closed-loop performance under aggressive motion.</p>
         <div class="hero-actions">
-          
+
             <a class="button-link button-primary" href="#submissions">Call for Contributions</a>
-          
+
             <a class="button-link button-secondary" href="#speakers">Confirmed Speakers</a>
-          
+
         </div>
       </div>
     </section>
 
     <section class="fact-strip" aria-label="Workshop facts">
       <div class="container stat-row">
-        
+
           <article class="stat-card">
             <span class="stat-label">Format</span>
             <strong>Half-day, in person</strong>
           </article>
-        
+
           <article class="stat-card">
             <span class="stat-label">Speakers</span>
-            <strong>4 confirmed</strong>
+            <strong>4 committed</strong>
           </article>
-        
+
           <article class="stat-card">
-            <span class="stat-label">Participation</span>
-            <strong>Talks, posters, breakouts</strong>
+            <span class="stat-label">Contributions</span>
+            <strong>15 posters, 2-3 spotlights</strong>
           </article>
-        
+
           <article class="stat-card">
-            <span class="stat-label">Output</span>
-            <strong>Public checklist artifact</strong>
+            <span class="stat-label">Audience</span>
+            <strong>30-50 participants</strong>
           </article>
-        
+
       </div>
     </section>
 
@@ -92,39 +92,39 @@
       <div class="container overview-panel">
         <div class="section-heading wide-heading">
           <p class="section-kicker">Overview</p>
-          <h2 class="section-title">Challenge-Driven Scope</h2>
+          <h2 class="section-title">A Closed-Loop Timing and Risk Problem</h2>
           <div class="prose-block">
-            
-              <p>Visual robot policies increasingly train in simulators, neural scenes, reconstructed digital twins, or generated worlds. The hard question is no longer whether these worlds look realistic, but whether their evidence predicts closed-loop behavior after deployment.</p>
-            
-              <p>We use aerial autonomy as a fast, safety-critical testbed for this broader robot-learning problem. High-speed flight exposes perception, dynamics, latency, and controller mismatch quickly, while making exhaustive real-world stress testing expensive and difficult to reproduce.</p>
-            
+
+              <p>At velocity v, observation-to-action delay tau creates roughly v tau meters of unobserved travel: at 10 m/s, 50 ms is already 0.5 m. Rendering, sensing, estimation, inference, actuation, and aerodynamic errors compound before the next correction.</p>
+
+              <p>Because a policy changes its future observations, visual realism alone cannot establish transfer. We will define task-relevant world edits, timing budgets, paired evaluation stages, and failure evidence for vision-conditioned agile flight.</p>
+
           </div>
         </div>
         <aside class="fit-panel">
           <p class="section-kicker">CoRL proposal fit</p>
           <div class="fit-list">
-            
+
               <article class="fit-item">
                 <h3>Focused Open Problem</h3>
-                <p>What evidence closes the visual sim-to-real loop for deployed robot policies?</p>
+                <p>What simulation evidence predicts real closed-loop performance for agile flight?</p>
               </article>
-            
+
               <article class="fit-item">
                 <h3>Interactive Format</h3>
-                <p>Challenge talks, contributed posters, breakout artifact sprint, and fishbowl synthesis.</p>
+                <p>Challenge pitches, claim-evidence clinic, protocol sprints, and rotating fishbowl.</p>
               </article>
-            
+
               <article class="fit-item">
                 <h3>Broad Participation</h3>
-                <p>Contributed workshop papers, selected spotlights, and active full-session discussion.</p>
+                <p>Fifteen posters, 2-3 spotlights, assigned breakout roles, and anonymous voting.</p>
               </article>
-            
+
               <article class="fit-item">
                 <h3>Lasting Artifact</h3>
-                <p>A public checklist for scenario edits, sim/real correlation, logs, and failure reporting.</p>
+                <p>A public evidence protocol for perturbations, timing, correlations, and failures.</p>
               </article>
-            
+
           </div>
         </aside>
       </div>
@@ -134,32 +134,32 @@
       <div class="container">
         <div class="section-header-row compact-header">
           <div>
-            <p class="section-kicker">Editable worlds are useful only when they predict closed-loop behavior</p>
+            <p class="section-kicker">Photorealism is useful only when it predicts closed-loop risk</p>
             <h2 class="section-title">Technical Thesis</h2>
           </div>
         </div>
         <div class="prose-block lead-prose">
-          
-            <p>The workshop connects classical photorealistic simulation (AirSim, FlightGoggles, Flightmare), domain randomization and adaptation, and newer NeRF/3D Gaussian Splatting pipelines such as NeRF2Real, COV-NeRF, SplatSim, RoboGSim, VR-Robo, RE3SIM, SOUS VIDE, Splat-Nav, GRaD-Nav++, HAMMER, and VISTA.</p>
-          
+
+            <p>AirSim, FlightGoggles, and Flightmare enabled scalable aerial simulation. NeRF/3DGS systems such as NeRF2Real, SplatSim, RE3SIM, VR-Robo, SOUS VIDE, Splat-Nav, GRaD-Nav++, and VISTA, plus recent Gaussian-splatting flight transfer and event-camera avoidance, now expose a sharper question: does simulated evidence predict outcomes across speeds and failure modes?</p>
+
         </div>
         <div class="context-grid">
-          
+
             <article class="context-card">
-              <h3>Real-To-Sim Worlds</h3>
-              <p>Reconstruct, generate, and edit scenes with task-relevant geometry, semantics, lighting, and sensor effects.</p>
+              <h3>Task-Conditioned Worlds</h3>
+              <p>Edit geometry, appearance, trajectories, camera response, and events against flight metrics rather than image fidelity alone.</p>
             </article>
-          
+
             <article class="context-card">
-              <h3>Closed-Loop Transfer</h3>
-              <p>Measure which visual, dynamics, latency, and control mismatches change policy behavior.</p>
+              <h3>Timing and Dynamics</h3>
+              <p>Model exposure, bandwidth, estimator delay, inference jitter, actuator lag, saturation, and aerodynamic residuals together.</p>
             </article>
-          
+
             <article class="context-card">
-              <h3>Deployment Evidence</h3>
-              <p>Connect simulation, hardware-in-the-loop, mixed reality, and real trials through comparable logs and failures.</p>
+              <h3>Predictive Evidence</h3>
+              <p>Pair simulation, HiL, mixed reality, and flight using matched seeds, failure recall, rank correlation, and uncertainty.</p>
             </article>
-          
+
         </div>
       </div>
     </section>
@@ -174,50 +174,56 @@
           <p class="section-note">Specific open problems, not a survey-style mini-conference.</p>
         </div>
         <div class="challenge-grid">
-          
+
             <article class="challenge-card">
               <span class="card-index">01</span>
-              <h3>Which Edits Matter?</h3>
-              <p>Find scene, object, lighting, texture, weather, and trajectory edits that expose real policy failures.</p>
+              <h3>Task-Conditioned Edits</h3>
+              <p>Which visual, geometric, dynamic-object, and sensor edits change time-to-contact, collision margin, tracking error, or policy actions?</p>
             </article>
-          
+
             <article class="challenge-card">
               <span class="card-index">02</span>
-              <h3>What Fidelity Predicts Transfer?</h3>
-              <p>Separate visual realism from closed-loop usefulness across sensors, dynamics, latency, and control.</p>
+              <h3>Timing and Sensing</h3>
+              <p>Which exposure, event bandwidth, estimator delay, inference jitter, control-rate, and compute budgets survive higher speed?</p>
             </article>
-          
+
             <article class="challenge-card">
               <span class="card-index">03</span>
-              <h3>How Do We Stress-Test Safely?</h3>
-              <p>Use simulation and mixed reality to discover failure boundaries before damaging hardware.</p>
+              <h3>Coupled Transfer</h3>
+              <p>How can visual mismatch be separated from actuator lag, aerodynamic residuals, disturbances, and estimator drift?</p>
             </article>
-          
+
             <article class="challenge-card">
               <span class="card-index">04</span>
-              <h3>What Should Be Reported?</h3>
-              <p>Standardize perturbation suites, sim/real correlations, negative results, logs, and deployment claims.</p>
+              <h3>Predictive Evaluation</h3>
+              <p>What rank correlation, paired failure recall, risk calibration, and uncertainty make sim, HiL, or MR predictive of flight?</p>
             </article>
-          
+
+            <article class="challenge-card">
+              <span class="card-index">05</span>
+              <h3>Failure Sets and Artifacts</h3>
+              <p>How should falsification find boundaries, and which seeds, assets, timestamps, trajectories, and negative results must be released?</p>
+            </article>
+
         </div>
         <div class="topic-chip-row" aria-label="Topics of interest">
-          
+
             <span class="topic-chip">Editable real-to-sim digital twins</span>
-          
+
             <span class="topic-chip">NeRF and 3D Gaussian Splatting</span>
-          
-            <span class="topic-chip">Visual sim-to-real transfer</span>
-          
-            <span class="topic-chip">Aerial navigation, racing, landing, and tracking</span>
-          
+
+            <span class="topic-chip">Agile navigation, racing, landing, and tracking</span>
+
             <span class="topic-chip">Hardware-in-the-loop and mixed reality</span>
-          
-            <span class="topic-chip">Failure-boundary discovery</span>
-          
-            <span class="topic-chip">Latency, sensing, and dynamics mismatch</span>
-          
-            <span class="topic-chip">Artifacts, logs, and reporting standards</span>
-          
+
+            <span class="topic-chip">Event/RGB sensor and latency models</span>
+
+            <span class="topic-chip">Dynamics residuals and system identification</span>
+
+            <span class="topic-chip">Failure-set discovery and falsification</span>
+
+            <span class="topic-chip">Sim/real correlation and risk calibration</span>
+
         </div>
       </div>
     </section>
@@ -232,67 +238,69 @@
           <p class="section-note">Four invited speakers, matching CoRL's half-day speaker cap.</p>
         </div>
         <div class="speaker-grid">
-          
+
             <article class="speaker-card">
-              
+
               <a class="speaker-photo" href="https://rpg.ifi.uzh.ch/people_scaramuzza.html" aria-label="Davide Scaramuzza profile">
                 <img src="./static/assets/people/davide-scaramuzza.jpg" alt="Davide Scaramuzza" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
                 <span class="avatar-fallback">DS</span>
               </a>
               <div class="speaker-copy">
-                <p class="speaker-status">Confirmed invited speaker</p>
+                <p class="speaker-status">Committed invited speaker</p>
                 <h3>Davide Scaramuzza</h3>
                 <p class="speaker-meta">University of Zurich</p>
                 <p>Agile visual flight, event cameras, and drone racing.</p>
-                
+
               </div>
             </article>
-          
+
             <article class="speaker-card">
-              
+
               <a class="speaker-photo" href="https://www2.eecs.berkeley.edu/Faculty/Homepages/loiannog.html" aria-label="Giuseppe Loianno profile">
                 <img src="./static/assets/people/giuseppe-loianno.jpg" alt="Giuseppe Loianno" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
                 <span class="avatar-fallback">GL</span>
               </a>
               <div class="speaker-copy">
-                <p class="speaker-status">Confirmed invited speaker</p>
+                <p class="speaker-status">Committed invited speaker</p>
                 <h3>Giuseppe Loianno</h3>
                 <p class="speaker-meta">UC Berkeley / CITRIS</p>
                 <p>Agile aerial robotics, onboard sensing, and multi-robot systems.</p>
-                
+
               </div>
             </article>
-          
+
             <article class="speaker-card">
-              
+
               <a class="speaker-photo" href="https://profiles.stanford.edu/mac-schwager" aria-label="Mac Schwager profile">
                 <img src="./static/assets/people/mac-schwager.jpg" alt="Mac Schwager" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
                 <span class="avatar-fallback">MS</span>
               </a>
               <div class="speaker-copy">
-                <p class="speaker-status">Confirmed; backup if travel conflict</p>
+                <p class="speaker-status">Committed speaker slot</p>
                 <h3>Mac Schwager</h3>
                 <p class="speaker-meta">Stanford University</p>
-                <p>Multi-robot autonomy, aerial swarms, and splat-based navigation.</p>
-                
+                <p>Neural-scene maps, multi-robot planning, and coordinated deployment.</p>
+
+                  <p class="speaker-note">A senior Ph.D. lab delegate will lead this axis if travel intervenes.</p>
+
               </div>
             </article>
-          
+
             <article class="speaker-card">
-              
+
               <a class="speaker-photo" href="https://stanfordasl.github.io/people/prof-marco-pavone/" aria-label="Marco Pavone profile">
                 <img src="./static/assets/people/marco-pavone.jpg" alt="Marco Pavone" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
                 <span class="avatar-fallback">MP</span>
               </a>
               <div class="speaker-copy">
-                <p class="speaker-status">Confirmed invited speaker</p>
+                <p class="speaker-status">Committed invited speaker</p>
                 <h3>Marco Pavone</h3>
-                <p class="speaker-meta">Stanford University / NVIDIA</p>
+                <p class="speaker-meta">NVIDIA Research / Stanford University</p>
                 <p>Safe autonomy, aerospace planning, and deployment evidence.</p>
-                
+
               </div>
             </article>
-          
+
         </div>
       </div>
     </section>
@@ -307,27 +315,27 @@
           <p class="section-note">Every block produces input for the public post-workshop artifact.</p>
         </div>
         <div class="format-grid">
-          
+
             <article class="format-card">
-              <h3>Opening Evidence Map</h3>
-              <p>A shared map from real data to editable worlds, policy learning, in-loop evaluation, and deployment claims.</p>
+              <h3>Evidence Cards</h3>
+              <p>Contributors pre-register the claim, speed, policy interface, mismatch axes, failure, evaluation stage, and artifacts.</p>
             </article>
-          
+
             <article class="format-card">
-              <h3>Challenge Talks</h3>
-              <p>Short invited talks, each ending with one unresolved challenge and one concrete artifact proposal.</p>
+              <h3>Claim-Evidence Clinic</h3>
+              <p>Two to three spotlights lead into 15 posters; assigned speaker/PC mentors annotate each evidence card.</p>
             </article>
-          
+
             <article class="format-card">
-              <h3>Contributed Posters</h3>
-              <p>Accepted papers, datasets, systems, failures, and position pieces, with selected spotlights.</p>
+              <h3>Protocol Sprints</h3>
+              <p>Four groups draft testable criteria with facilitator, scribe, skeptic, and reporter roles.</p>
             </article>
-          
+
             <article class="format-card">
-              <h3>Artifact Sprint</h3>
-              <p>Breakouts draft the post-workshop checklist for evaluation, logging, and reporting standards.</p>
+              <h3>Fishbowl and Red Team</h3>
+              <p>An open rotating seat, recorded dissent, and anonymous adopt/revise/needs-evidence votes turn discussion into decisions.</p>
             </article>
-          
+
         </div>
       </div>
     </section>
@@ -340,17 +348,19 @@
           <p class="section-note">We will solicit and accept contributed workshop papers.</p>
         </div>
         <div class="prose-block">
-          <p>We will invite 2 to 4 page extended abstracts, in-progress papers, datasets, benchmark proposals, system descriptions, failure analyses, sim/real correlation studies, and position pieces from aerial and non-aerial visual robotics.</p>
+          <p>OpenReview will accept 2 to 4 page non-archival preliminary work, negative findings, datasets, benchmarks, systems, failure analyses, sim/real correlation studies, and positions. Each submission states its claim, speed regime, evaluation ladder, mismatch axes, failure evidence, and artifacts.</p>
           <ul class="bullet-list">
-            
-              <li>Each submission receives at least two reviews.</li>
-            
-              <li>Criteria: relevance, clarity, technical soundness, discussion value, and artifact potential.</li>
-            
-              <li>Accepted work appears as posters; selected papers receive short spotlights.</li>
-            
+
+              <li>At least two conflict-checked reviews; a third resolves substantial disagreement.</li>
+
+              <li>Rubric: challenge fit, technical clarity, evidence, discussion value, and artifact potential.</li>
+
+              <li>Approximately 15 posters; 2-3 spotlights selected for technical complementarity and broad representation, not score alone.</li>
+
+              <li>Rigorous in-progress and negative results are welcome; every accepted author joins a protocol station.</li>
+
               <li>Main CoRL 2026 papers will not be accepted as workshop papers.</li>
-            
+
           </ul>
         </div>
       </div>
@@ -364,55 +374,79 @@
           <p class="section-note">Final times will follow CoRL room assignments.</p>
         </div>
         <div class="timeline">
-          
+
             <article class="timeline-item">
-              <div class="timeline-time">09:00</div>
+              <div class="timeline-time">08:30-08:40</div>
               <div class="timeline-copy">
-                <h3>Opening evidence map</h3>
-                <p>Real scenes, editable worlds, evaluation, deployment</p>
+                <h3>Evidence map + live poll</h3>
+                <p>Map claims and audience failure modes</p>
               </div>
             </article>
-          
+
             <article class="timeline-item">
-              <div class="timeline-time">09:15</div>
+              <div class="timeline-time">08:40-09:28</div>
               <div class="timeline-copy">
-                <h3>Invited challenge talks I</h3>
-                <p>Agile visual flight and aerial systems</p>
+                <h3>Four challenge pitches</h3>
+                <p>One failure, metric, and protocol per speaker</p>
               </div>
             </article>
-          
+
             <article class="timeline-item">
-              <div class="timeline-time">10:05</div>
+              <div class="timeline-time">09:28-09:40</div>
               <div class="timeline-copy">
-                <h3>Contributed spotlights + posters</h3>
-                <p>Accepted papers, datasets, systems, failures</p>
+                <h3>Contributed spotlights</h3>
+                <p>Two to three complementary papers, four minutes each</p>
               </div>
             </article>
-          
+
             <article class="timeline-item">
-              <div class="timeline-time">10:55</div>
+              <div class="timeline-time">09:40-10:20</div>
               <div class="timeline-copy">
-                <h3>Invited challenge talks II</h3>
-                <p>Multi-robot deployment, safety, and control</p>
+                <h3>Poster/demo clinic + coffee</h3>
+                <p>Fifteen posters with assigned evidence-card feedback</p>
               </div>
             </article>
-          
+
             <article class="timeline-item">
-              <div class="timeline-time">11:45</div>
+              <div class="timeline-time">10:20-10:30</div>
               <div class="timeline-copy">
-                <h3>Breakout artifact sprint</h3>
-                <p>Scenario edits, sim/real evidence, reporting</p>
+                <h3>Breakout briefing</h3>
+                <p>Assign facilitator, scribe, skeptic, and reporter</p>
               </div>
             </article>
-          
+
             <article class="timeline-item">
-              <div class="timeline-time">12:35</div>
+              <div class="timeline-time">10:30-11:15</div>
               <div class="timeline-copy">
-                <h3>Fishbowl synthesis</h3>
-                <p>Checklist decisions and unresolved disagreements</p>
+                <h3>Four protocol sprints</h3>
+                <p>Worlds, timing/dynamics, evidence ladder, failures</p>
               </div>
             </article>
-          
+
+            <article class="timeline-item">
+              <div class="timeline-time">11:15-11:30</div>
+              <div class="timeline-copy">
+                <h3>Station reports</h3>
+                <p>Two-minute reports plus cross-group challenge</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-time">11:30-12:05</div>
+              <div class="timeline-copy">
+                <h3>Rotating-seat fishbowl</h3>
+                <p>Resolve criteria while preserving dissent</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-time">12:05-12:30</div>
+              <div class="timeline-copy">
+                <h3>Red team, vote, and owners</h3>
+                <p>Adopt, revise, or flag; assign artifact deadlines</p>
+              </div>
+            </article>
+
         </div>
       </div>
     </section>
@@ -421,9 +455,9 @@
       <div class="container artifact-band">
         <div>
           <p class="section-kicker">Post-workshop artifact</p>
-          <h2 class="section-title">Post-Workshop Artifact</h2>
+          <h2 class="section-title">An Evidence Protocol for Visual Sim-to-Real in Agile Aerial Robotics</h2>
         </div>
-        <p>The workshop will produce A Community Checklist for Closing the Visual Sim-to-Real Loop, summarizing evaluation axes, perturbation suites, sim/real correlation practices, logs, failure-reporting norms, and links to accepted contributions.</p>
+        <p>The public report will define task-conditioned perturbation and timing suites; a simulation-HiL-MR-flight evidence ladder; correlation, failure-recall, and uncertainty measures; minimum logs; and unresolved dissent.</p>
       </div>
     </section>
 
@@ -436,9 +470,9 @@
           </div>
         </div>
         <div class="organizer-grid">
-          
+
             <article class="organizer-card">
-              
+
               <a class="organizer-photo" href="https://yanmiao.netlify.app/" aria-label="Yan Miao profile">
                 <img src="./static/assets/people/yan-miao-linkedin.jpg" alt="Yan Miao" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
                 <span class="avatar-fallback">YM</span>
@@ -450,9 +484,9 @@
                 <a class="organizer-mail" href="mailto:yanmiao2@illinois.edu">yanmiao2@illinois.edu</a>
               </div>
             </article>
-          
+
             <article class="organizer-card">
-              
+
               <a class="organizer-photo" href="https://mitras.ece.illinois.edu/" aria-label="Sayan Mitra profile">
                 <img src="./static/assets/people/sayan-mitra.jpg" alt="Sayan Mitra" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
                 <span class="avatar-fallback">SM</span>
@@ -464,7 +498,7 @@
                 <a class="organizer-mail" href="mailto:mitras@illinois.edu">mitras@illinois.edu</a>
               </div>
             </article>
-          
+
         </div>
       </div>
     </section>
@@ -474,8 +508,8 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <p class="footer-title">Closing the Visual Sim-to-Real Loop for Robot Learning</p>
-        <p>Proposed CoRL 2026 workshop on editable worlds, closed-loop evaluation, and deployment evidence for visual sim-to-real robot learning.</p>
+        <p class="footer-title">Closing the Visual Sim-to-Real Loop for Agile Aerial Robots</p>
+        <p>Proposed CoRL 2026 workshop on predictive visual sim-to-real evidence for agile aerial robots.</p>
       </div>
       <div class="footer-links">
         <a href="https://yanmiao2.github.io/corl2026-visual-sim2real-loop/">https://yanmiao2.github.io/corl2026-visual-sim2real-loop/</a>
